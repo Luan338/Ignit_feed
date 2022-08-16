@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "./Post.module.css";
 import perfil2 from "../../assets/eupo.jpg";
+import Comment from "../Comment/Comment";
+import Avatar from "../Avatar/Avatar";
 
 export default function Post({}){
   return(
     <article className={styles.Post}>
       <section className={styles.container}>
         <div className={styles.author}>
-          <img className={styles.avatar} src={perfil2} alt="Perfil" />
+          <Avatar src={perfil2} text="Perfil"/>
           <div className={styles.authorInfo}>
             <strong>Luan Eric</strong>
             <span>Programador III</span>
@@ -27,10 +29,13 @@ export default function Post({}){
       <footer className={styles.container_footer}>
         <strong>Deixe seu feedback</strong>
         <form>
-          <textarea></textarea>
-          <button className={styles.btn_publish}>Publicar</button>
+          <textarea placeholder="Deixe um comentário" />
+          <div className={styles.comment_btn}>
+            <button className={styles.btn_publish}>Publicar</button>
+          </div>
         </form>
       </footer>
+      <Comment />
     </article>
   )
 }

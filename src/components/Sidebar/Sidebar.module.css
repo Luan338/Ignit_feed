@@ -18,18 +18,6 @@
   object-fit: cover;
 }
 
-.perfil {
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 50%;
-  border: 4px solid var(--gray-800);
-  outline: 2px solid var(--green-500);
-
-  position: absolute;
-  top: 5rem;
-  cursor: pointer;
-}
-
 .profile {
   display: flex;
   flex-direction: column;
